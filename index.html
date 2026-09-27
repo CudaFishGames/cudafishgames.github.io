@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CudaFishGames — Score Tracker</title>
-<meta name="description" content="Score Tracker: keep score for card, board and dice games. No ads, no accounts, no internet permission. From CudaFishGames.">
+<meta name="description" content="Score Tracker: keep score for card games, dominoes, darts, mini golf or any game with your own rules. No ads, no accounts, no internet permission. From CudaFishGames.">
 <meta property="og:title" content="Score Tracker">
 <meta property="og:description" content="Keep score for any game. No ads, no accounts, works completely offline.">
 <meta property="og:type" content="website">
@@ -34,10 +34,12 @@
     padding:76px 0 84px;
   }
   .hero-in{display:flex; gap:40px; align-items:center; flex-wrap:wrap}
+  /* Shrinks beside the icon rather than wrapping under it; still wraps on a phone. */
+  .hero-in > div{flex:1 1 320px; min-width:0}
   .hero img{width:128px; height:128px; border-radius:28px; flex:none;
             box-shadow:0 18px 44px #0009}
   .hero h1{font-size:clamp(2.3rem,6vw,3.4rem); line-height:1.05; margin:0 0 12px; letter-spacing:-.02em}
-  .tagline{font-size:clamp(1.05rem,2.4vw,1.3rem); color:#c9d4e6; margin:0 0 22px}
+  .tagline{font-size:clamp(1.05rem,2.4vw,1.3rem); color:#c9d4e6; margin:0 0 22px; text-wrap:balance}
   /* ---- store buttons ---- */
   .stores{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
   .store{
@@ -108,7 +110,8 @@
     <img src="assets/icon.png" alt="Score Tracker icon">
     <div>
       <h1>Score Tracker</h1>
-      <p class="tagline">Keep score for card, board and dice games.<br>No ads. No accounts. No internet.</p>
+      <p class="tagline">Keep score for card games, dominoes, darts and mini golf — or any game
+      with your own rules.<br>No ads. No accounts. No internet.</p>
       <div class="stores">
         <a class="store store-live"
            href="https://play.google.com/store/apps/details?id=com.cudafishgames.scoretracker">
@@ -143,8 +146,8 @@
     <div class="grid">
       <div class="card">
         <h3>Games already set up</h3>
-        <p>Hearts, Spades, Uno, Flip&nbsp;7, Rummy, Cribbage, Golf and Darts arrive with the
-        right rules. Or set your own.</p>
+        <p>Hearts, Spades, Uno, Flip&nbsp;7, Rummy, Cribbage, Golf, Darts, Mini Golf, and three
+        ways to score dominoes arrive with the right rules. Or set your own.</p>
       </div>
       <div class="card">
         <h3>Rounds and history</h3>
@@ -153,8 +156,8 @@
       </div>
       <div class="card">
         <h3>Your house rules</h3>
-        <p>Save target scores, round settings and how the winner is decided as a preset.
-        Set it up once, reuse it forever.</p>
+        <p>Save target scores, round settings and how the winner is decided as your own game.
+        Create and edit them right from the home screen, then reuse them forever.</p>
       </div>
       <div class="card">
         <h3>Life totals too</h3>
@@ -165,6 +168,21 @@
         <h3>Save or don't</h3>
         <p>Name a game and it saves as you play. Or use Quick score, which keeps nothing at
         all.</p>
+      </div>
+      <div class="card">
+        <h3>Share the result</h3>
+        <p>Send the final standings as a message, or as a score card image that shows off
+        the winner.</p>
+      </div>
+      <div class="card">
+        <h3>Make it yours</h3>
+        <p>Pick a background colour, or put your own photo behind the scoreboard, dimmed as
+        much or as little as you like.</p>
+      </div>
+      <div class="card">
+        <h3>Who goes first?</h3>
+        <p>Roll a d20 or a d6, flip a coin, or let the app pick who starts, right from the
+        scoreboard.</p>
       </div>
       <div class="card">
         <h3>Built for the table</h3>
@@ -198,6 +216,8 @@
       <li>No advertising, no analytics, no crash reporting</li>
       <li>No advertising ID, no device identifiers</li>
       <li>Saved games and presets stay in the app's private storage on your device</li>
+      <li>A background photo is a copy of the one picture you choose — the app never gets
+      access to your photo library</li>
     </ul>
     <p><a href="privacy/">Read the full privacy policy →</a></p>
   </div>
