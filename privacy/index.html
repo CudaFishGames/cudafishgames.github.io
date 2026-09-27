@@ -63,7 +63,9 @@
   <p><strong>Score Tracker does not collect any of your data.</strong> It has no accounts, no
   analytics, no advertising, and no crash reporting. It does not request permission to access
   the internet, and it cannot send information anywhere. Everything you enter stays on your
-  phone unless <em>you</em> choose to share it — see <a href="#sharing">section 5</a>.</p>
+  phone, apart from Android's own encrypted backup of your phone (see
+  <a href="#backups">section 6</a>) and anything <em>you</em> choose to share (see
+  <a href="#sharing">section 5</a>).</p>
 </div>
 
 <h2>1. Who this policy covers</h2>
@@ -104,9 +106,10 @@ photo alone. The copy is deleted when you tap <em>Remove photo</em>, when you pi
 different photo, or when you clear the app's storage.</p>
 <p>This information is written only to the app's private storage area on your device, and we
 have no access to it. We cannot see it, retrieve it, or recover it for you. The app never
-transmits it off your phone by itself — the only exception is a result you choose to send
-as text or as a score card through Android's share sheet, described in
-<a href="#sharing">section 5</a>.</p>
+transmits it off your phone itself. It can leave in only two ways, and the app performs
+neither: Android's own backup of your phone, described in <a href="#backups">section 6</a>,
+and a result you choose to send as text or as a score card through Android's share sheet,
+described in <a href="#sharing">section 5</a>.</p>
 <p>The app also offers a <strong>Quick score</strong> mode, which keeps nothing at all — that
 data exists only while the game is open.</p>
 
@@ -138,12 +141,25 @@ have entered can leave the device, and either happens <strong>only</strong> when
 <p>Nothing is shared automatically, nothing is shared in the background, and we never see
 the message or the card, or know that you sent one.</p>
 
-<h2>6. Backups</h2>
-<p>The app disables Android's automatic backup feature. Your saved games and presets are
-<strong>not</strong> copied to your Google account or included in device backups. They remain
-solely on the device where you created them.</p>
-<p>One consequence worth knowing: if you uninstall the app, switch phones, or reset your
-device, your saved games will not carry over and cannot be restored.</p>
+<h2 id="backups">6. Backups</h2>
+<p>If your phone's backup is turned on (on most phones, <em>Settings → Google → Backup</em>),
+Android includes Score Tracker's saved games, custom games, settings and background photo in
+it, the same way it backs up your other apps. When you set up a new phone from that backup,
+or copy your old phone across, they come back with the app.</p>
+<ul>
+  <li><strong>Android makes the backup, not Score Tracker.</strong> The app still has no
+    internet permission and sends nothing itself.</li>
+  <li><strong>It goes to your own Google account.</strong> We never receive it and cannot
+    see it.</li>
+  <li><strong>On Android 9 and later it is end-to-end encrypted</strong> with your phone's
+    screen lock (PIN, pattern or password), so Google cannot read it either. If your phone
+    has no screen lock, the backup is still encrypted, but not with a secret only you
+    hold.</li>
+  <li>Temporary files, such as score card images made for sharing, are not included.</li>
+</ul>
+<p>Android does not let you exclude a single app from its backup. If you would rather none of
+this is backed up, turn off backup for your phone in Android's settings. You can delete an
+existing backup from Google Drive, under <em>Backups</em>.</p>
 
 <h2>7. Permissions</h2>
 <p>Score Tracker requests no Android permissions. It additionally blocks several permissions
@@ -164,6 +180,8 @@ personal information from a child.</p>
   <li>Remove a background photo with <em>Remove photo</em> in Settings</li>
   <li>Clear the app's storage through Android's <em>Settings → Apps → Score Tracker → Storage</em></li>
   <li>Uninstall the app, which permanently removes all of its data from your device</li>
+  <li>Delete your phone's backup from Google Drive, under <em>Backups</em>, which removes the
+    copy Android keeps in your Google account (see <a href="#backups">section 6</a>)</li>
 </ul>
 <p>Since we never receive your data, there is nothing for us to delete on our side and no
 deletion request to submit.</p>
