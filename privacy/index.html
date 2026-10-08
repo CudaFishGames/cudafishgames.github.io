@@ -47,6 +47,7 @@
   }
   .summary p { margin: 0; }
   .summary strong { color: var(--accent); }
+  h3 { font-size: 1rem; margin: 1.4rem 0 .4rem; }
   ul { padding-left: 1.3rem; }
   li { margin: .35rem 0; }
   a { color: var(--accent); }
@@ -57,21 +58,26 @@
 <body>
 
 <h1>Privacy Policy for Score Tracker</h1>
-<p class="dates">Effective 17 August 2026 · Last updated 27 September 2026</p>
+<p class="dates">Effective 17 August 2026 · Last updated 8 October 2026</p>
 
 <div class="summary">
   <p><strong>Score Tracker does not collect any of your data.</strong> It has no accounts, no
-  analytics, no advertising, and no crash reporting. It does not request permission to access
-  the internet, and it cannot send information anywhere. Everything you enter stays on your
-  phone, apart from Android's own encrypted backup of your phone (see
-  <a href="#backups">section 6</a>) and anything <em>you</em> choose to share (see
-  <a href="#sharing">section 5</a>).</p>
+  analytics, no advertising, and no crash reporting. It contains no code that connects to the
+  internet, and it does not send information anywhere. Everything you enter stays on your
+  phone, apart from your phone's own backup (see <a href="#backups">section 6</a>) and
+  anything <em>you</em> choose to share (see <a href="#sharing">section 5</a>).</p>
 </div>
 
 <h2>1. Who this policy covers</h2>
-<p>This policy applies to the <strong>Score Tracker</strong> Android application
-(<code>com.cudafishgames.scoretracker</code>), distributed through Google Play by
-CudaFishGames ("we", "us").</p>
+<p>This policy applies to the <strong>Score Tracker</strong> app
+(<code>com.cudafishgames.scoretracker</code>) by CudaFishGames ("we", "us"), on both
+platforms it is sold for:</p>
+<ul>
+  <li><strong>Android</strong>, distributed through Google Play</li>
+  <li><strong>iPhone</strong>, distributed through the App Store</li>
+</ul>
+<p>The app works the same way on both, and so does this policy. Where the two operating
+systems differ — mainly in how backups and permissions work — the section says so.</p>
 
 <h2>2. Information we collect</h2>
 <p><strong>We collect nothing.</strong> Specifically, Score Tracker does not collect, transmit,
@@ -85,7 +91,8 @@ sell, or share:</p>
   <li>Crash reports or diagnostic telemetry</li>
 </ul>
 <p>Score Tracker contains no advertising, no analytics software, and no third-party tracking
-components of any kind.</p>
+components of any kind. It does not track you across other companies' apps or websites, and
+on iPhone it never asks for permission to.</p>
 <p>This section is about what <em>we</em> do. It does not restrict what <em>you</em> may
 choose to do with your own scores: you can send a result to someone yourself, which is
 described in <a href="#sharing">section 5</a>.</p>
@@ -100,27 +107,36 @@ phone:</p>
   <li>A background photo, if you choose one: a smaller copy of the single photo you pick,
     used only to draw behind the app</li>
 </ul>
-<p>Choosing a background photo does not give the app access to your photo library. Android's
-photo picker hands the app only the one photo you select, and the app keeps a copy of that
-photo alone. The copy is deleted when you tap <em>Remove photo</em>, when you pick a
-different photo, or when you clear the app's storage.</p>
+<p>Choosing a background photo does not give the app access to your photo library. On both
+Android and iPhone, the system photo picker runs outside the app and hands it only the one
+photo you select, and the app keeps a copy of that photo alone. The copy is deleted when you
+tap <em>Remove photo</em>, when you pick a different photo, or when the app's data is
+removed (see <a href="#deleting">section 9</a>).</p>
 <p>This information is written only to the app's private storage area on your device, and we
 have no access to it. We cannot see it, retrieve it, or recover it for you. The app never
 transmits it off your phone itself. It can leave in only two ways, and the app performs
-neither: Android's own backup of your phone, described in <a href="#backups">section 6</a>,
-and a result you choose to send as text or as a score card through Android's share sheet,
+neither: your phone's own backup, described in <a href="#backups">section 6</a>, and a
+result you choose to send as text or as a score card through your phone's share sheet,
 described in <a href="#sharing">section 5</a>.</p>
 <p>The app also offers a <strong>Quick score</strong> mode, which keeps nothing at all — that
 data exists only while the game is open.</p>
 
 <h2 id="network">4. No network access</h2>
-<p>Score Tracker does not request the Android internet permission. The operating system
-therefore prevents the app from making any network connection whatsoever. This is not merely
-a promise about our intentions — it is enforced by Android itself and can be verified in the
-app's manifest.</p>
+<p>Score Tracker contains no code that connects to the internet. It has no server to talk
+to, and it makes no network connections of any kind.</p>
+<h3>Android</h3>
+<p>The app does not request the Android internet permission, so the operating system
+prevents it from making any network connection whatsoever. This is not merely a promise
+about our intentions — it is enforced by Android itself and can be verified in the app's
+manifest.</p>
+<h3>iPhone</h3>
+<p>iOS has no internet permission for an app to leave out, so on iPhone this rests on the
+app's code rather than on the operating system. You can check it yourself: turn on
+<em>Settings → Privacy &amp; Security → App Privacy Report</em>, use Score Tracker for a
+while, and it will show no network activity for the app.</p>
 
 <h2 id="sharing">5. Sharing a result</h2>
-<p>Score Tracker can share a game's scores two ways, both through Android's standard share
+<p>Score Tracker can share a game's scores two ways, both through your phone's standard share
 sheet: as a <strong>plain-text message</strong>, and as a <strong>score card</strong> — an
 image of the result that the app draws on your phone. These are the only ways anything you
 have entered can leave the device, and either happens <strong>only</strong> when you tap
@@ -134,72 +150,104 @@ have entered can leave the device, and either happens <strong>only</strong> when
   there is no server involved, and the image file is written to the app's own private
   storage before you hand it on.</li>
   <li><strong>We are not involved in the transfer.</strong> The app hands the text or the
-  image to Android, you pick an app, and that app sends it under its own permissions and its
-  own privacy policy. Score Tracker still has no network access of its own and still cannot
-  send anything anywhere by itself — see <a href="#network">section 4</a>.</li>
+  image to your phone's share sheet, you pick an app, and that app sends it under its own
+  permissions and its own privacy policy. Score Tracker still has no network access of its
+  own and still cannot send anything anywhere by itself — see
+  <a href="#network">section 4</a>.</li>
 </ul>
 <p>Nothing is shared automatically, nothing is shared in the background, and we never see
 the message or the card, or know that you sent one.</p>
 
 <h2 id="backups">6. Backups</h2>
-<p>If your phone's backup is turned on (on most phones, <em>Settings → Google → Backup</em>),
-Android includes Score Tracker's saved games, custom games, settings and background photo in
-it, the same way it backs up your other apps. When you set up a new phone from that backup,
-or copy your old phone across, they come back with the app.</p>
+<p>If your phone's backup is turned on, it includes Score Tracker's saved games, custom
+games, settings and background photo, the same way it backs up your other apps. When you set
+up a new phone from that backup, or copy your old phone across, they come back with the app.
+On both platforms:</p>
 <ul>
-  <li><strong>Android makes the backup, not Score Tracker.</strong> The app still has no
-    internet permission and sends nothing itself.</li>
-  <li><strong>It goes to your own Google account.</strong> We never receive it and cannot
-    see it.</li>
-  <li><strong>On Android 9 and later it is end-to-end encrypted</strong> with your phone's
-    screen lock (PIN, pattern or password), so Google cannot read it either. If your phone
-    has no screen lock, the backup is still encrypted, but not with a secret only you
-    hold.</li>
+  <li><strong>Your phone makes the backup, not Score Tracker.</strong> The app sends nothing
+    itself.</li>
+  <li><strong>It goes to your own account</strong> — Google on Android, iCloud on iPhone. We
+    never receive it and cannot see it.</li>
   <li>Temporary files, such as score card images made for sharing, are not included.</li>
 </ul>
+<h3>Android</h3>
+<p>Android backs up apps when your phone's backup is on (on most phones, <em>Settings →
+Google → Backup</em>). On Android 9 and later the backup is end-to-end encrypted with your
+phone's screen lock (PIN, pattern or password), so Google cannot read it either. If your
+phone has no screen lock, the backup is still encrypted, but not with a secret only you
+hold.</p>
 <p>Android does not let you exclude a single app from its backup. If you would rather none of
 this is backed up, turn off backup for your phone in Android's settings. You can delete an
 existing backup from Google Drive, under <em>Backups</em>.</p>
+<h3>iPhone</h3>
+<p>iPhone backs up apps to iCloud when <em>iCloud Backup</em> is on, and to your computer
+if you back up your phone with Finder or the Apple Devices app. iCloud backups are
+encrypted. Apple holds the keys to them unless you turn on <strong>Advanced Data
+Protection</strong> for iCloud, in which case they are end-to-end encrypted and Apple cannot
+read them either. A backup made on your computer is encrypted if you choose to encrypt it.</p>
+<p>Unlike Android, iPhone lets you leave out a single app: in Settings, under your name →
+<em>iCloud</em>, open your backups, choose this iPhone, and turn Score Tracker off. Deleting
+that backup there also removes the copy in iCloud.</p>
 
 <h2>7. Permissions</h2>
-<p>Score Tracker requests no Android permissions. It additionally blocks several permissions
-that would otherwise be included automatically, including internet access, external storage
+<p>Score Tracker asks for no permissions on either platform. Choosing a background photo
+needs none, because the system photo picker only ever gives the app the one photo you
+select.</p>
+<h3>Android</h3>
+<p>The app requests no Android permissions. It additionally blocks several permissions that
+would otherwise be included automatically, including internet access, external storage
 access, camera, microphone, photo and video library access, and the ability to draw over
-other apps. Choosing a background photo needs none of these, because Android's photo picker
-only ever gives the app the one photo you select.</p>
+other apps.</p>
+<h3>iPhone</h3>
+<p>The app never shows a permission prompt. It does not ask for access to your photo
+library, camera, microphone, contacts, location, or to track you across apps.</p>
 
 <h2>8. Children's privacy</h2>
 <p>Score Tracker collects no information from anyone, including children under the age of 13.
 Because no data is gathered or transmitted, the app cannot knowingly or unknowingly collect
 personal information from a child.</p>
 
-<h2>9. Deleting your data</h2>
-<p>You are in full control of everything the app stores:</p>
+<h2 id="deleting">9. Deleting your data</h2>
+<p>You are in full control of everything the app stores. On both platforms:</p>
 <ul>
   <li>Delete individual saved games or custom presets from within the app at any time</li>
   <li>Remove a background photo with <em>Remove photo</em> in Settings</li>
-  <li>Clear the app's storage through Android's <em>Settings → Apps → Score Tracker → Storage</em></li>
   <li>Uninstall the app, which permanently removes all of its data from your device</li>
+</ul>
+<h3>Android</h3>
+<ul>
+  <li>Clear the app's storage through Android's <em>Settings → Apps → Score Tracker → Storage</em></li>
   <li>Delete your phone's backup from Google Drive, under <em>Backups</em>, which removes the
     copy Android keeps in your Google account (see <a href="#backups">section 6</a>)</li>
+</ul>
+<h3>iPhone</h3>
+<ul>
+  <li>Delete the app, from the Home Screen or <em>Settings → General → iPhone Storage →
+    Score Tracker → Delete App</em>. Note that <em>Offload App</em> in the same place keeps
+    your data on the phone, so it is not a way to remove it</li>
+  <li>Remove the copy in iCloud by turning Score Tracker off in your iCloud backup, or by
+    deleting the backup (see <a href="#backups">section 6</a>)</li>
 </ul>
 <p>Since we never receive your data, there is nothing for us to delete on our side and no
 deletion request to submit.</p>
 
-<h2>10. Purchases and Google Play</h2>
-<p>Score Tracker is a paid application. Your purchase is processed entirely by Google Play —
-we never receive, see, or store your payment details, billing address, or any part of your
-payment method. Google's handling of that transaction is governed by the
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-<p>Google Play also provides us with aggregate, anonymised statistics about installs and sales
-as part of its developer tools. This information comes from Google, not from the app, and does
-not identify individual users.</p>
+<h2>10. Purchases</h2>
+<p>Score Tracker is a paid application. Your purchase is processed entirely by the store you
+buy it from — Google Play on Android, the App Store on iPhone. We never receive, see, or
+store your payment details, billing address, or any part of your payment method. That
+transaction is governed by the store's own privacy policy:
+the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> or
+the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+<p>Both stores also provide us with aggregate, anonymised statistics about downloads and
+sales as part of their developer tools. This information comes from Google and Apple, not
+from the app, and does not identify individual users.</p>
 
 <h2>11. Changes to this policy</h2>
 <p>If this policy changes, we will update the "last updated" date at the top of this page. If
 a future version of the app ever collects data — for example, to add an optional feature that
 shares content between devices — this policy will be updated <em>before</em> that version is
-released, and the corresponding Google Play Data Safety declaration will be updated with it.</p>
+released, along with the Google Play Data Safety declaration and the App Store privacy
+details.</p>
 
 <h2>12. Contact</h2>
 <p>Questions about this policy or about privacy in Score Tracker can be sent to
