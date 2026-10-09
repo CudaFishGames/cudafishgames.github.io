@@ -5,27 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Score Tracker</title>
 <style>
+  /* The landing page's palette, so the policy reads as part of the same site — and of the
+     app, whose navy and indigo these are. Dark only, like the landing page. */
   :root {
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #5a5a5a;
-    --accent: #1a5a8a;
-    --card-bg: #f2f7fb;
-    --card-border: #cfe0ee;
-    --rule: #e3e3e3;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16191c;
-      --fg: #e8e8e8;
-      --muted: #a0a6ad;
-      --accent: #7cb8e0;
-      --card-bg: #1c2733;
-      --card-border: #2e4256;
-      --rule: #2c3136;
-    }
+    --bg: #0b1020;
+    --fg: #eef2f8;
+    --muted: #9aa7bd;
+    --accent: #9ea0f2;
+    --card-bg: #1a2234;
+    --card-border: #323775;
+    --rule: #2a3448;
   }
   * { box-sizing: border-box; }
+  html { background: var(--bg); }
   body {
     margin: 0 auto;
     padding: 2.5rem 1.25rem 4rem;
@@ -33,29 +25,33 @@
     background: var(--bg);
     color: var(--fg);
     font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
-  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4rem; }
+  .home { display: inline-block; margin: 0 0 1.5rem; font-size: .9rem; font-weight: 600; text-decoration: none; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.01em; }
   h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
   h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 1rem; margin: 1.4rem 0 .4rem; color: var(--accent); }
   .dates { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
   .summary {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 1.1rem 1.25rem;
     margin: 0 0 2rem;
   }
   .summary p { margin: 0; }
   .summary strong { color: var(--accent); }
-  h3 { font-size: 1rem; margin: 1.4rem 0 .4rem; }
   ul { padding-left: 1.3rem; }
   li { margin: .35rem 0; }
   a { color: var(--accent); }
   footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .875rem; }
-  code { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 4px; padding: .1rem .35rem; font-size: .9em; }
+  code { background: var(--card-bg); border: 1px solid var(--rule); border-radius: 4px; padding: .1rem .35rem; font-size: .9em; }
 </style>
 </head>
 <body>
+
+<a class="home" href="../">‹ Score Tracker</a>
 
 <h1>Privacy Policy for Score Tracker</h1>
 <p class="dates">Effective 17 August 2026 · Last updated 8 October 2026</p>
