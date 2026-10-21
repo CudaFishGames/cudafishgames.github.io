@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CudaFishGames — Score Tracker</title>
-<meta name="description" content="Score Tracker: keep score for card games, dice games, dominoes, darts, mini golf or any game with your own rules. No ads, no accounts, no internet permission. From CudaFishGames.">
+<meta name="description" content="Score Tracker: keep score for card games, dice games, dominoes, darts, mini golf or any game with your own rules. No ads, no accounts, works completely offline. On Android and iPhone. From CudaFishGames.">
 <meta property="og:title" content="Score Tracker">
 <meta property="og:description" content="Keep score for any game. No ads, no accounts, works completely offline.">
 <meta property="og:type" content="website">
@@ -56,9 +56,6 @@
     box-shadow:0 10px 26px #6466e955; transition:transform .12s ease, box-shadow .12s ease;
   }
   .store-live:hover{transform:translateY(-2px); box-shadow:0 14px 32px #6466e977}
-  .store-soon{
-    background:#ffffff10; border:1px solid #ffffff2b; color:#c9d4e6; cursor:default;
-  }
 
   /* ---- sections ---- */
   section{padding:76px 0; border-bottom:1px solid var(--line)}
@@ -123,15 +120,15 @@
             <strong>Google Play</strong>
           </span>
         </a>
-        <span class="store store-soon">
+        <a class="store store-live" href="https://apps.apple.com/app/id6816261044">
           <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
             <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.208-1.227-3.234-4.871-.026-3.05 2.486-4.51 2.6-4.576-1.429-2.09-3.623-2.325-4.374-2.376-2-.156-3.675 1.09-4.615 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.68.805-3.535 1.818-.767.896-1.33 2.338-1.166 3.714 1.336.117 2.717-.664 3.456-1.7"/>
           </svg>
           <span>
-            <small>Coming soon to</small>
-            <strong>the App Store</strong>
+            <small>Download on the</small>
+            <strong>App Store</strong>
           </span>
-        </span>
+        </a>
       </div>
     </div>
   </div>
@@ -209,15 +206,16 @@
 <section class="privacy" id="privacy">
   <div class="wrap">
     <h2>It collects nothing</h2>
-    <p class="claim">Score Tracker does not request permission to access the internet. Android
-    itself stops it connecting anywhere — so it can't send your data off your phone even if it
-    wanted to.</p>
+    <p class="claim">Score Tracker contains no code that connects to the internet, so it has no
+    way to send your data off your phone. On Android it goes further: the app doesn't even have
+    permission to go online, so Android itself stops it connecting anywhere.</p>
     <ul>
       <li>No accounts and no sign-in</li>
       <li>No advertising, no analytics, no crash reporting</li>
       <li>No advertising ID, no device identifiers</li>
       <li>Saved games and presets stay in the app's private storage on your device, and in
-      your phone's own encrypted Android backup if that's on, so a new phone gets them back</li>
+      your phone's own backup if that's on (Google on Android, iCloud on iPhone), so a new
+      phone gets them back</li>
       <li>A background photo is a copy of the one picture you choose — the app never gets
       access to your photo library</li>
     </ul>
